@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.c-btn-contact {
+  display: inline-block;
+  width: rem(200);
+  padding: rem(11) 0 rem(11);
+  background-color: $blue;
+  border: 2px solid $blue;
+  border-radius: rem(25);
+  font-family: $base-font-family;
+  font-size: rem(14);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  color: $white;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.c-btn-contact:hover{
+  background-color: $white;
+  color: $blue;
+}

@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.c-logo__link{
+  font-family: $third-font-family;
+  font-weight: $regular;
+  letter-spacing: 0.05em;
+  color: $blue;
+}
+
+.c-logo__jp{
+  font-size: rem(29);
+  color: $blue;
+}
+
+.c-logo__en{
+  font-size: rem(14);
+  color: $blue;
+  margin-top: rem(3);
+}
