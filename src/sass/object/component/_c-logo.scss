@@ -1,13 +1,14 @@
 @use "global" as *;
 
-.c-logo__link{
+.c-logo{
+  display: inline-block;
   font-family: $third-font-family;
   font-weight: $regular;
   letter-spacing: 0.05em;
   color: $blue;
 }
 
-.c-logo__jp{
+.c-logo__ja{
   font-size: rem(29);
   color: $blue;
 }

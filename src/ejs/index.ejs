@@ -1,23 +1,25 @@
+<% 
+  Path = "."
+  assetsPath = "./assets";
+  imagePath = "./assets/images";
+  cssPath = "./assets/css";
+  scriptPath = "./assets/scripts";
+%>
+
 <!DOCTYPE html>
 <html lang="ja">
-<!-- <% let title= 'Hanasan Camp'; %>
-<% let description= '説明文です'; %> -->
-
-<%- include('./common/_head') %>
+  <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_top-header') %>
-  
 
-    <%- include('./component/_c-btn-contact',{text:'お問い合わせはこちら', link:'#'}) %>
+    <%- include('./common/_top-header') %>
+    <%- include('./component/_c-btn-contact',{text:'お問い合わせはこちら', link:'#', modifier:''}) %>
     <%- include('./component/_c-btn-white',{text:'More', link:'#'}) %>
     <%- include('./component/_c-btn-blue',{text:'More', link:'#'}) %>
-
-
-    <div class="space"></div>
+    
+    
     <% for (var i=0; i < 4; i++) { %>
-
+    
+    
     <% } %>
-
-
   </body>
 </html>

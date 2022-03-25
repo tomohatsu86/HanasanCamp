@@ -2,6 +2,8 @@
 
 .p-pc-global-nav{
   height: inherit;
+  display: flex;
+  text-align: center;
 
   @include mq("md"){
     display: none;
@@ -11,7 +13,7 @@
 .p-pc-global-nav__items{
   height: inherit;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   align-items: center;
 }
 
@@ -24,7 +26,7 @@
 }
 
 .p-pc-global-nav__item a{
-  display: block;
+  display: inline-block;
   height: inherit;
   padding: 0 rem(18);
   font-family: $base-font-family;
@@ -36,6 +38,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  
+  @media screen and (max-width: 940px) {
+    padding: 0 rem(10);
+  }
 }
 
 .p-pc-global-nav__item a::after{
@@ -53,4 +59,8 @@
 
 .p-pc-global-nav__item a:hover:after{
   width: calc(100% - #{rem(34)});
+}
+
+.p-pc-global-nav__btn{
+  margin: auto 0;
 }

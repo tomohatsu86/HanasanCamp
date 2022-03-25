@@ -32,11 +32,44 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
+  // ドロワーメニューアイコンをクリックしたらメニューを開く・閉じる
+  $(function() {
+    $(".js-drawer-open").on('click',function () {
+      if($('.js-drawer-open').hasClass('is-open')){
+        $('.js-drawer-menu').fadeOut(300);
+        $(this).removeClass('is-open');
+        $("html").removeClass("is-fixed");
+      }else{
+        $('.js-drawer-menu').fadeIn(300);
+        $(this).addClass('is-open');
+        $("html").addClass("is-fixed");
+      }
+    });
   });
+
+  // ドロワーメニュー内のリンクをクリックしたらメニューを閉じる
+  $(function() {
+    $(".drawer-nav-link").on("click", function() {
+    let $screenwidth = $(window).width();
+    let $breakpoint_md = 768;
+    if ($screenwidth < $breakpoint_md){
+      if($('.js-drawer').hasClass('is-open')){
+        $('.js-drawer-menu').fadeOut(300);
+        $('.js-drawer').removeClass('is-open');
+        $("html").removeClass("is-fixed");
+      }else{
+        $('.js-drawer-menu').fadeIn(300);
+        $('.js-drawer').addClass('is-open');
+        $("html").addClass("is-fixed");
+      }
+    }
+    });
+  });
+  // //ドロワーメニュー
+  // $('.navbar_toggle').on('click', function () {
+  //   $(this).toggleClass('open');
+  //   $('.menu').toggleClass('open');
+  // });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {

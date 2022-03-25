@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.p-sp-global-nav{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $blue2;
+  z-index: 8888;
+  overflow: scroll;
+}
+
+.p-sp-global-nav.is-open{
+  display: block;
+}
+
+.p-sp-global-nav__items{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: rem(209);
+  padding-bottom: rem(100);
+}
+
+.p-sp-global-nav__item a{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  color: $white;
+  letter-spacing: rem(2);
+  text-align: center;
+  display: block;
+  padding: rem(16) 0;
+  position: relative;
+}
+
+.p-sp-global-nav__item a::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background: $white;
+  position: absolute;
+  bottom: rem(8);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s;
+}
+
+.p-sp-global-nav__item a:hover:after{
+    width: 20%;
+}
+
+.p-sp-global-nav__btn{
+  margin-top: rem(20);
+  text-align: center;
+}

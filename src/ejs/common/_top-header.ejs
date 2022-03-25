@@ -5,8 +5,18 @@
     </h1>
 
     <!-- PC-グローバルナビ -->
-    <nav class="p-top-header__nav">
+    <nav class="p-top-header__nav p-pc-global-nav">
       <%- include('../project/_p-pc-global-nav') %>
     </nav>
+
+    <!-- ドロワーメニューボタン -->
+    <button class="p-top-header__drawer c-hamburger js-drawer-open" id="menu-button">
+      <%- include('../component/_c-hamburger') %>
+    </button>
+
+    <!-- sp-グローバルナビ -->
+    <div class="p-sp-global-nav js-drawer-menu">
+      <%- include('../project/_p-sp-global-nav') %>
+    </div>
 
 </header>

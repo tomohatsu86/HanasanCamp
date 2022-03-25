@@ -1,0 +1,47 @@
+@use "global" as *;
+
+$hamburger-width: 42px; //バーガーボタンの幅
+$hamburger-height: 6px; //バーガーボタンの高さ
+$hamburger-color: $blue; //バーガーボタンの色
+$hamburger-radius: 2px; //バーガーボタンのバーの角丸
+$hamburger-margin: 8px; //バーガーボタンのバーの間隔
+
+.c-hamburger{
+  z-index: 9999;
+  background: transparent;
+  border: none;
+}
+
+.c-hamburger span{
+  position: relative;
+  display: block;
+  width: $hamburger-width;
+  height: $hamburger-height;
+  background: $hamburger-color;
+  border-radius: $hamburger-radius;
+  transition: ease .3s;
+}
+
+.c-hamburger span:nth-child(1){
+  top: 0;
+}
+.c-hamburger span:nth-child(2){
+  margin: $hamburger-margin 0;
+}
+.c-hamburger span:nth-child(3){
+  top: 0;
+}
+
+//バーガーボタンのクリックした時の動き
+.c-hamburger.is-open span:nth-child(1){
+  top: 15px;
+  transform: rotate(45deg);
+}
+.c-hamburger.is-open span:nth-child(2){
+  transform: translateY(-50%);
+  opacity: 0;
+}
+.c-hamburger.is-open span:nth-child(3){
+  top: -14px;
+  transform: rotate(-45deg);
+}
