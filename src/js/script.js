@@ -49,17 +49,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // ドロワーメニュー内のリンクをクリックしたらメニューを閉じる
   $(function() {
-    $(".drawer-nav-link").on("click", function() {
+    $(".js-drawer-menu a").on("click", function() {
     let $screenwidth = $(window).width();
     let $breakpoint_md = 768;
     if ($screenwidth < $breakpoint_md){
-      if($('.js-drawer').hasClass('is-open')){
+      if($('.js-drawer-open').hasClass('is-open')){
         $('.js-drawer-menu').fadeOut(300);
-        $('.js-drawer').removeClass('is-open');
+        $('.js-drawer-open').removeClass('is-open');
         $("html").removeClass("is-fixed");
       }else{
         $('.js-drawer-menu').fadeIn(300);
-        $('.js-drawer').addClass('is-open');
+        $('.js-drawer-open').addClass('is-open');
         $("html").addClass("is-fixed");
       }
     }
