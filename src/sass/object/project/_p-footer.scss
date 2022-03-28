@@ -1,0 +1,101 @@
+@use "global" as *;
+
+.p-footer{
+  background-color: $blue;
+}
+
+.p-footer__inner{
+  width: 100%;
+  max-width: rem(1224);
+  padding: 0 $padding-pc;
+  margin: 0 auto;
+}
+
+.p-footer__items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+}
+
+.p-footer__info{
+  display: flex;
+  align-items: center;
+}
+
+.p-footer__logo{
+
+}
+
+.p-footer__address{
+  font-family: $third-font-family;
+  font-size: rem(15);
+  font-weight: $regular;
+  letter-spacing: 0.2em;
+  color: $white;
+  margin-left: rem(55);
+}
+
+.p-footer__address p{
+  margin-bottom: rem(5);
+}
+
+.p-footer__contact{
+  background-color: $white;
+  padding: rem(56) rem(68) rem(25);
+}
+
+.p-footer__tel{
+  font-family: $base-font-family;
+  font-size: rem(36);
+  font-weight: $bold;
+  letter-spacing: 0.1em;
+  color: $blue;
+  text-align: center;
+}
+
+.p-footer__reception{
+  font-family: $base-font-family;
+  font-weight: $regular;
+  letter-spacing: 0.05em;
+  color: $black;
+  display: flex;
+  align-items: center;
+}
+
+.p-footer__label{
+  font-size: rem(14);
+  margin-right: rem(18);
+}
+
+.p-footer__time{
+  font-size: rem(16);
+  margin-top: rem(5);
+}
+
+.p-footer__time span{
+  font-size: rem(12);
+}
+
+.p-footer__text{
+  text-align: center;
+  margin-top: rem(17);
+}
+
+.p-footer__text a {
+  text-decoration: underline;
+  color: -webkit-link;
+}
+
+.p-footer__copyright{
+  font-family: $second-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.04em;
+  color: $white;
+  background-color: $blue2;
+  padding-top: rem(25);
+  padding-bottom: rem(21);
+  text-align: center;
+}

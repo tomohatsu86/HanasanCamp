@@ -1,3 +1,36 @@
-<div class="l-footer p-footer">
-  これはフッターです
+<footer class="l-footer p-footer">
+  <div class="p-footer__inner">
+    <div class="p-footer__items">
+      <div class="p-footer__info">
+        <div class="p-footer__logo">
+          <%- include('../component/_c-logo',{modifier:'c-logo--white'}) %>
+        </div>
+        <div class="p-footer__address">
+          <p>〒000-000</p>
+          <p>住所住所住所住所住所住所住所</p>
+          <p>営業時間／9:00～18:00</p>
+        </div>
+      </div>
+      <div class="p-footer__contact">
+        <div class="p-footer__tel">000-000-0000</div>
+        <div class="p-footer__reception">
+          <div class="p-footer__label c-label">受付時間</div>
+          <div class="p-footer__time">平日9:00 ～ 18:00<br><span>※土日祝はお休みを頂いております。</span></div>
+        </div>
+        <div class="p-footer__text">メールでのお問い合わせは<a href="">こちら</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="p-footer__copyright">
+    <p>&copy;sample accounting Office All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- トップスクロールボタン -->
+<div class="p-page-top">
+  <a href="#" class="c-top-btn"></a>
 </div>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script defer type="text/javascript" src="./assets/js/script.js"></script>

@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.p-section-head{
+  text-align: center;
+}
+
+.p-section-head__title{
+  font-family: $third-font-family;
+  font-size: rem(36);
+  font-weight: $regular;
+  letter-spacing: 0em;
+  color: $blue;
+  position: relative;
+}
+
+.p-section-head__title::after{
+  content: "";
+  display: block;
+  height: 5px;
+  width: rem(75);
+  background: $blue;
+  position: absolute;
+  bottom: rem(-15);
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.p-section-head__en{
+  font-family: $second-font-family;
+  font-size: rem(20);
+  font-weight: $SemiBold;
+  letter-spacing: 0.05em;
+  color: $blue;
+  text-transform: uppercase;
+  margin-top: rem(35);
+}
+
+.p-section-head--left{
+  text-align: left;
+}
+
+.p-section-head--left .p-section-head__title::after{
+  left: 0;
+  transform: translateX(0);
+}

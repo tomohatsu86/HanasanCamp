@@ -10,16 +10,45 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-
+    <!-- ヘッダー -->
     <%- include('./common/_top-header') %>
-    <%- include('./component/_c-btn-contact',{text:'お問い合わせはこちら', link:'#', modifier:''}) %>
-    <%- include('./component/_c-btn-white',{text:'More', link:'#'}) %>
+
+    <!-- メインビュー -->
+    <%- include('./project/_p-top-mv') %>
+
+
+    <!-- コンセプトセクション -->
+    <%- include('./project/_p-section-head',{modifier:'', title:'私たちについて', en:'concept'}) %>
     <%- include('./component/_c-btn-blue',{text:'More', link:'#'}) %>
+
+
+
+    <!-- 法人セクション -->
+    <%- include('./project/_p-section-head',{modifier:'p-section-head--left', title:'法人設立をお考えの方', en:'entrepreneurship support'}) %>
+    <%- include('./component/_c-btn-white',{text:'More', link:'#'}) %>
+
+
+
+    <!-- その他サポートセクション -->
+    <%- include('./project/_p-section-head',{modifier:'', title:'その他のサポート', en:'other support'}) %>
+
+
+
+
+
+
+
+
+
+
+
     
-    
-    <% for (var i=0; i < 4; i++) { %>
-    
-    
-    <% } %>
+    <div class="space"></div>
+    <%- include('./common/_footer') %>
   </body>
-</html>
+  </html>
+  
+  <% for (var i=0; i < 4; i++) { %>
+  
+  
+  <% } %>

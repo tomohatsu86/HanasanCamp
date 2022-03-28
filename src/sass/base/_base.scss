@@ -1,6 +1,10 @@
 /* リキッドレイアウト対応 */
 @use "global" as *;
 
+
+.space{
+  padding-top: rem(2500);
+}
 html {
   // //~375px
   // @media (max-width: 375px) {
