@@ -1,0 +1,17 @@
+@use "global" as *;
+
+
+.p-top-concept__text{
+  width: 100%;
+  font-family: $base-font-family;
+  font-size: rem(18);
+  font-weight: $regular;
+  letter-spacing: 0em;
+  color: $black2;
+  margin-top: rem(40);
+}
+
+.p-top-concept__btn{
+  text-align: center;
+  margin-top: rem(56);
+}

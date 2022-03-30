@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.p-top-entrepreneurship{
+  width: 100%;
+  background-image: url(../images/top/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom rem(0) right rem(5);
+}
+
+.p-top-entrepreneurship__inner{
+  padding-top: rem(73);
+  padding-bottom: rem(82);
+  background-color: #f5f5f5;
+  clip-path: polygon(0 0, 50% 0%, 67% 100%, 0 100%);
+}
+
+.p-top-entrepreneurship__box{
+  width: rem(593);
+}
+
+.p-top-entrepreneurship__text{
+  width: 100%;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0em;
+  line-height: 1.9;
+  color: $black2;
+  margin-top: rem(40);
+}
+
+.p-top-entrepreneurship__btn{
+  margin-top: rem(50);
+}

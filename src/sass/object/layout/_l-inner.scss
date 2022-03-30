@@ -3,14 +3,16 @@
 // インナー
 .l-inner {
 	margin: 0 auto;
-	max-width: rem(540); //状況によって変える必要があるかも
+	max-width: $l-inner + strip-unit($padding-pc) * 2;
 	width: 100%;
 	height: inherit;
-	padding-right: $padding-sp;
-	padding-left: $padding-sp;
+	padding-right: $padding-pc;
+	padding-left: $padding-pc;
+
 	@include mq(md) {
-		max-width: $l-inner + strip-unit($padding-pc) * 2;
-		padding-right: $padding-pc;
-		padding-left: $padding-pc;
+		max-width: rem(540);
+		width: 100%;
+		padding-right: $padding-sp;
+		padding-left: $padding-sp;
 	}
 }

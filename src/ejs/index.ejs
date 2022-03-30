@@ -1,9 +1,9 @@
 <% 
   Path = "."
-  assetsPath = "./assets";
-  imagePath = "./assets/images";
-  cssPath = "./assets/css";
-  scriptPath = "./assets/scripts";
+  assetsPath = "./dist";
+  imagePath = "./dist/images";
+  cssPath = "./dist/css";
+  scriptPath = "./dist/js";
 %>
 
 <!DOCTYPE html>
@@ -16,16 +16,12 @@
     <!-- メインビュー -->
     <%- include('./project/_p-top-mv') %>
 
-
     <!-- コンセプトセクション -->
-    <%- include('./project/_p-section-head',{modifier:'', title:'私たちについて', en:'concept'}) %>
-    <%- include('./component/_c-btn-blue',{text:'More', link:'#'}) %>
-
-
-
+    <%- include('./project/_p-top-concept') %>
+    
     <!-- 法人セクション -->
-    <%- include('./project/_p-section-head',{modifier:'p-section-head--left', title:'法人設立をお考えの方', en:'entrepreneurship support'}) %>
-    <%- include('./component/_c-btn-white',{text:'More', link:'#'}) %>
+    <%- include('./project/_p-top-entrepreneurship') %>
+    
 
 
 
