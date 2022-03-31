@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.p-card{
+  width: rem(535);
+  text-align: center;
+  padding: rem(29) rem(87);
+  border: solid 1px #ecedef;
+}
+
+.p-card__icon{
+  display: inline-block;
+  width: rem(54);
+}
+
+.p-card__title{
+  font-family: $base-font-family;
+  font-size: rem(18);
+  font-weight: $bold;
+  letter-spacing: 0.02em;
+  color: #333;
+  margin-top: rem(16);
+}
+
+.p-card__text{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.02em;
+  color: #949494;
+  margin-top: rem(26);
+}
+
+.p-cord__btn{
+  margin-top: rem(14);
+  
+}

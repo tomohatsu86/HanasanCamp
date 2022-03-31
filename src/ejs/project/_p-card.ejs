@@ -1,0 +1,10 @@
+<% imagePath = "./images/top/"; %>
+
+<div class="p-card__icon">
+  <img src="<%= imagePath + image %>" alt="<%= alt %>">
+</div>
+<p class="p-card__title"><%= title %></p>
+<p class="p-card__text"><%= text %><br><%= text2 %></p>
+<div class="p-cord__btn">
+  <%- include('../component/_c-btn-card',{text:'More', link:'#'}) %>
+</div>

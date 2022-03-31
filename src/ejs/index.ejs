@@ -1,11 +1,3 @@
-<% 
-  Path = "."
-  assetsPath = "./dist";
-  imagePath = "./dist/images";
-  cssPath = "./dist/css";
-  scriptPath = "./dist/js";
-%>
-
 <!DOCTYPE html>
 <html lang="ja">
   <%- include('./common/_head') %>
@@ -22,24 +14,10 @@
     <!-- 法人セクション -->
     <%- include('./project/_p-top-entrepreneurship') %>
     
-
-
-
     <!-- その他サポートセクション -->
-    <%- include('./project/_p-section-head',{modifier:'', title:'その他のサポート', en:'other support'}) %>
-
-
-
-
-
-
-
-
-
-
-
+    <%- include('./project/_p-top-other') %>
     
-    <div class="space"></div>
+    <!-- フッター -->
     <%- include('./common/_footer') %>
   </body>
   </html>

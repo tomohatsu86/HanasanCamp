@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.c-btn-card {
+  display: inline-block;
+  width: rem(70);
+  padding: rem(7) 0;
+  background-color: $white;
+  border-bottom: 2px solid $blue;
+  font-family: $second-font-family;
+  font-size: rem(14);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: $blue;
+  text-align: left;
+  transition: ease .3s;
+  position: relative;
+}
+
+.c-btn-card:hover{
+  background-color: $blue;
+  color: $white;
+}
+
+.c-btn-card::before{
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: rem(4) solid transparent;
+  border-bottom: rem(4) solid transparent;
+  border-left: rem(5) solid $blue;
+  border-right: rem(5) solid transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(-5);
+}
+
+.c-btn-card:hover:before{
+  border-top: rem(5) solid transparent;
+  border-bottom: rem(5) solid transparent;
+  border-left: rem(7) solid $white;
+  border-right: rem(7) solid transparent;
+}
+

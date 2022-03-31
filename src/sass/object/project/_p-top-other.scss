@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-top-other{
+
+}
+
+.p-top-other__text{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.05em;
+  color: $black;
+  text-align: center;
+  margin-top: rem(45);
+}
+
+.p-top-other__contents{
+  display: flex;
+  text-align: center;
+  margin-left: rem(30);
+  margin-right: rem(30);
+  margin-top: rem(52);
+}
+
+.p-top-other__item +.p-top-other__item{
+  margin-left: rem(100);
+}
