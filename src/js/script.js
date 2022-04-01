@@ -1,12 +1,12 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-  var topBtn = $('.page-top');
+  var topBtn = $('.js-top-scroll');
   topBtn.hide();
 
   // ボタンの表示設定
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
+    if ($(this).scrollTop() > 120) {
       // 指定px以上のスクロールでボタンを表示
       topBtn.fadeIn();
     } else {
@@ -14,7 +14,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       topBtn.fadeOut();
     }
   });
-
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
     $('body,html').animate({

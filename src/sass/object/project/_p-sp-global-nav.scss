@@ -1,19 +1,9 @@
 @use "global" as *;
 
 .p-sp-global-nav{
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
   background-color: $blue2;
-  z-index: 8888;
-  overflow: scroll;
-}
-
-.p-sp-global-nav.is-open{
-  display: block;
 }
 
 .p-sp-global-nav__items{
@@ -52,7 +42,7 @@
 }
 
 .p-sp-global-nav__item a:hover:after{
-    width: 20%;
+  width: 20%;
 }
 
 .p-sp-global-nav__btn{
