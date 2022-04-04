@@ -13,8 +13,9 @@
 .p-pc-global-nav__items{
   height: inherit;
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .p-pc-global-nav__items .p-pc-global-nav__btn{
@@ -23,6 +24,11 @@
 
 .p-pc-global-nav__item{
   height: inherit;
+
+  @media screen and (max-width: 840px) {
+    height: rem(60);
+  }
+
 }
 
 .p-pc-global-nav__item a{
@@ -39,9 +45,18 @@
   justify-content: center;
   position: relative;
   
+  @media screen and (max-width: 1240px) {
+    padding: 0 rem(13);
+  }
+
   @media screen and (max-width: 940px) {
     padding: 0 rem(10);
   }
+
+  @media screen and (max-width: 840px) {
+    padding: 0 rem(15);
+  }
+
 }
 
 .p-pc-global-nav__item a::after{
@@ -55,6 +70,10 @@
   left: 50%;
   transform: translateX(-50%);
   transition: .3s;
+  
+  @media screen and (max-width: 840px) {
+    bottom: rem(12);
+  }
 }
 
 .p-pc-global-nav__item a:hover:after{

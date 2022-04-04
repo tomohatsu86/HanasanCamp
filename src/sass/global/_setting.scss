@@ -69,7 +69,8 @@ $blue2: #265294;
     sm: 375,
     md: 767,
     lg: 1023,
-    inner: strip-unit($l-inner),
+    // inner: strip-unit($l-inner),
+    inner: 1230,
     xl: 1440,
   );
 
@@ -78,7 +79,7 @@ $blue2: #265294;
   md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
   lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
   inner: "screen and (max-width: #{map-get($breakpoints,'inner')}px)",
-  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+  xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
 );
 //------------------------------------------------------------
 

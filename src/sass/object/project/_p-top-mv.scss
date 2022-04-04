@@ -7,7 +7,7 @@
   // height: (770 / 392) * 100vw;
   
   @include mq("md"){
-    // height: (851 / 1280) * 100vw;
+    height: math.div(1024, 767) * 100vw;
     // height: (851 / 1298) * 100vw;
   }
 }
@@ -38,22 +38,45 @@
   letter-spacing: 0em;
   line-height: 1;
   color: $white;
-    
+
+
+  @include mq("xl"){
+    font-size: rem(36);
+  }
+  @include mq("inner"){
+    font-size: rem(30);
+  }
   @include mq("md"){
-    font-size: rem(21);
+    font-size: rem(18);
   }
 }
 
 .p-top-mv__title div:last-child{
   margin-top: rem(26);
+  
+  @include mq("xl"){
+    margin-top: rem(18);
+  }
+  @include mq("inner"){
+    margin-top: rem(15);
+  }
+  @include mq("md"){
+    margin-top: rem(10);
+  }
 }
 
 .p-top-mv__title span{
   font-size: rem(76);
   
-  // @include mq("md"){
-  //   font-size: rem(31);
-  // }
+  @include mq("xl"){
+    font-size: rem(54);
+  }
+  @include mq("inner"){
+    font-size: rem(46);
+  }
+  @include mq("md"){
+    font-size: rem(28);
+  }
 }
 
 .p-top-mv__subtitle{
@@ -67,7 +90,16 @@
   text-transform: uppercase;
   margin-top: rem(81);
 
+  @include mq("xl"){
+    font-size: rem(18);
+    margin-top: rem(58);
+  }
+  @include mq("inner"){
+    font-size: rem(15);
+    margin-top: rem(49);
+  }
   @include mq("md"){
-    font-size: rem(25);
+    font-size: rem(10);
+    margin-top: rem(30);
   }
 }

@@ -17,9 +17,8 @@
 .p-top-other__contents{
   display: flex;
   text-align: center;
-  margin-left: rem(30);
-  margin-right: rem(30);
-  margin-top: rem(52);
+  justify-content: center;
+  margin: rem(52) auto 0;
 }
 
 .p-top-other__item +.p-top-other__item{
