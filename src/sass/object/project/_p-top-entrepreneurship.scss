@@ -20,16 +20,26 @@
   background-position: right;
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 60% 100%);
   
+  @include mq("md"){
+    display: none;
+  }
 }
 
 .p-top-entrepreneurship__inner{
   position: relative;
   padding-top: rem(83);
   padding-bottom: rem(82);
+  
+  @include mq("md"){
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+  }
 }
 
 .p-top-entrepreneurship__box{
-  width: rem(593);
+  width: 100%;
+  max-width: rem(593);
+  
 }
 
 .p-top-entrepreneurship__text{

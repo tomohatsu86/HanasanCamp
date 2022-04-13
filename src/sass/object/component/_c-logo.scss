@@ -12,11 +12,20 @@
 
 .c-logo__ja{
   font-size: rem(29);
+  
+  @include mq("md"){
+    font-size: rem(21);
+  }
 }
 
 .c-logo__en{
   font-size: rem(16);
   margin-top: rem(10);
+  
+  @include mq("md"){
+    font-size: rem(14);
+    margin-top: rem(8);
+  }
 }
 
 .c-logo--white{

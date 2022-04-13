@@ -2,4 +2,8 @@
 
 .l-top-other{
   margin-top: rem(105);
+  
+  @include mq("md"){
+    margin-top: rem(75);
+  }
 }

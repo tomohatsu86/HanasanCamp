@@ -7,8 +7,11 @@
   // height: (770 / 392) * 100vw;
   
   @include mq("md"){
-    height: math.div(1024, 767) * 100vw;
+    height: math.div(460, 375) * 100vw;
     // height: (851 / 1298) * 100vw;
+  }
+  @include mq("sm"){
+    height: math.div(760, 375) * 100vw;
   }
 }
 
@@ -19,7 +22,9 @@
   background-image: url(../images/top/mv.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
+  
 }
 
 .p-top-mv__text{
@@ -47,7 +52,11 @@
     font-size: rem(30);
   }
   @include mq("md"){
-    font-size: rem(18);
+    font-size: rem(24);
+    line-height: 1.5;
+  }
+  @include mq("sm"){
+    font-size: rem(20);
   }
 }
 
@@ -61,6 +70,9 @@
     margin-top: rem(15);
   }
   @include mq("md"){
+    margin-top: rem(12);
+  }
+  @include mq("sm"){
     margin-top: rem(10);
   }
 }
@@ -75,6 +87,9 @@
     font-size: rem(46);
   }
   @include mq("md"){
+    font-size: rem(36);
+  }
+  @include mq("sm"){
     font-size: rem(28);
   }
 }
@@ -99,6 +114,10 @@
     margin-top: rem(49);
   }
   @include mq("md"){
+    font-size: rem(15);
+    margin-top: rem(49);
+  }
+  @include mq("sm"){
     font-size: rem(10);
     margin-top: rem(30);
   }

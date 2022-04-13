@@ -9,6 +9,11 @@
   justify-content: center;
   transition: .3s;
   border-radius: rem(35);
+  
+  @include mq("md"){
+    width: rem(35);
+    height: rem(35);
+  }
 
 }
 
@@ -25,6 +30,12 @@
   border-right: rem(4) solid $blue;
   transform:  translateY(6px) rotate(-45deg);
   transition: .3s;
+  
+  @include mq("md"){
+    width: rem(15);
+    height: rem(15);
+    transform:  translateY(3px) rotate(-45deg);
+  }
 }
 
 .c-top-scroll:hover:after{

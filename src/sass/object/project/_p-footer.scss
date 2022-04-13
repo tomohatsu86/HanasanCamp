@@ -17,11 +17,19 @@
   justify-content: space-between;
   padding-top: rem(30);
   padding-bottom: rem(30);
+  
+  @include mq("md"){
+    display: block;
+  }
 }
 
 .p-footer__info{
   display: flex;
   align-items: center;
+  
+  @include mq("md"){
+    display: block;
+  }
 }
 
 .p-footer__logo{
@@ -35,6 +43,12 @@
   letter-spacing: 0.2em;
   color: $white;
   margin-left: rem(55);
+  
+  @include mq("md"){
+    // font-size: rem(12);
+    margin-left: 0;
+    margin-top: rem(25);
+  }
 }
 
 .p-footer__address p{
@@ -44,6 +58,10 @@
 .p-footer__contact{
   background-color: $white;
   padding: rem(56) rem(68) rem(25);
+  
+  @include mq("md"){
+    padding: rem(24) rem(20) rem(14);
+  }
 }
 
 .p-footer__tel{
@@ -53,6 +71,10 @@
   letter-spacing: 0.1em;
   color: $blue;
   text-align: center;
+  
+  @include mq("md"){
+    font-size: rem(24);
+  }
 }
 
 .p-footer__reception{
@@ -62,16 +84,25 @@
   color: $black;
   display: flex;
   align-items: center;
+
 }
 
 .p-footer__label{
   font-size: rem(14);
   margin-right: rem(18);
+
+  @include mq("md"){
+    font-size: rem(12);
+  }
 }
 
 .p-footer__time{
   font-size: rem(16);
   margin-top: rem(5);
+
+  @include mq("md"){
+    font-size: rem(14);
+  }
 }
 
 .p-footer__time span{
@@ -79,8 +110,13 @@
 }
 
 .p-footer__text{
+  font-size: rem(16);
   text-align: center;
   margin-top: rem(17);
+
+  @include mq("md"){
+    font-size: rem(14);
+  }
 }
 
 .p-footer__text a {
@@ -98,10 +134,15 @@
   padding-top: rem(25);
   padding-bottom: rem(21);
   text-align: center;
+
+  @include mq("md"){
+    font-size: rem(14);
+  }
 }
 
 .p-footer__top-scroll{
   position: fixed;
   right: rem(22);
   bottom: rem(22);
+
 }

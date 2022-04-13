@@ -50,7 +50,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(function() {
     $(".js-drawer-menu a").on("click", function() {
     let $screenwidth = $(window).width();
-    let $breakpoint_md = 768;
+    let $breakpoint_md = 767;
     if ($screenwidth < $breakpoint_md){
       if($('.js-drawer-open').hasClass('is-open')){
         $('.js-drawer-menu').fadeOut(300);
