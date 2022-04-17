@@ -1,9 +1,10 @@
 @use "global" as *;
 
 .p-card{
-  width: rem(535);
+  width: 100%;
+  max-width: rem(535);
   text-align: center;
-  padding: rem(29) rem(87);
+  padding: rem(29) 0;
   border: solid 1px #ecedef;
 }
 
@@ -22,12 +23,15 @@
 }
 
 .p-card__text{
+  width: 100%;
+  max-width: rem(350);
   font-family: $base-font-family;
   font-size: rem(16);
   font-weight: $regular;
   letter-spacing: 0.02em;
   color: #949494;
-  margin-top: rem(26);
+  padding: 0 rem(10);
+  margin: rem(26) auto 0;
 }
 
 .p-card__btn{
