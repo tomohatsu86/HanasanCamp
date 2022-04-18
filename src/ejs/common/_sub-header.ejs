@@ -1,0 +1,32 @@
+<header class="p-sub-header l-sub-header">
+  <div class="p-sub-header__inner">
+    <h1 class="p-sub-header__logo">
+      <%- include('../component/_c-logo',{modifier:''}) %>
+    </h1>
+
+    <!-- PC-グローバルナビ -->
+    <nav class="p-sub-header__nav">
+      <%- include('../project/_p-global-nav-pc') %>
+    </nav>
+
+    <!-- ドロワーメニューボタン -->
+    <button class="p-sub-header__drawer" id="menu-button">
+      <%- include('../component/_c-hamburger') %>
+    </button>
+
+    <!-- sp-グローバルナビ -->
+    <div class="p-sub-header__sp-nav js-drawer-menu">
+      <%- include('../project/_p-global-nav-sp') %>
+    </div>
+  </div>
+</header>
+
+<!-- 下層ページメインビュー -->
+<div class="p-sub-mv">
+  <div class="p-sub-mv__container">
+    <div class="p-sub-mv__text">
+      <span class="p-sub-mv__title"><%= subtitle.subTitle %></span>
+      <span class="p-sub-mv__subtitle"><%= subtitle.subTitleEn %></span>
+    </div>
+  </div>
+</div>

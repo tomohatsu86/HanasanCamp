@@ -1,17 +1,31 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <%- include('./common/_head') %>
-  <body>
-    <!-- ヘッダー -->
-    <%- include('./common/_top-header') %>
+<% const meta = {
+  title : "Hanasan's Camp | ABOUT",
+  description : "私たちについてのページです",
+  keyword : "",
+  ogp_title : "",
+  type : "",
+  ogp_url : "",
+  ogp_image : "",
+  ogp_sitename : "",
+  ogp_description : "",
+  favicon_href : "",
+}; %>
+<% path = "."; %>
 
-    <!-- メインビュー -->
-    <%- include('./project/_p-about-mv') %>
+<%- include(path + '/common/_head', {meta: meta}) %>
+
+<% const subtitle = {
+  subTitle : '私たちについて',
+  subTitleEn : "concept",
+}%>
+<!-- ヘッダー + トップメインビュー-->
+<%- include(path + '/common/_sub-header', {subtitle: subtitle}) %>
 
 
-    
-    <!-- フッター -->
-    <%- include('./common/_footer') %>
 
-  </body>
-  </html>
+
+
+<!-- フッター -->
+<%- include(path + '/common/_footer') %>
+
+

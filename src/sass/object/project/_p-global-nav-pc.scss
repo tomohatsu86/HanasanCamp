@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-pc-global-nav{
+.p-global-nav-pc{
   height: inherit;
   display: flex;
   text-align: center;
@@ -10,7 +10,7 @@
   }
 }
 
-.p-pc-global-nav__items{
+.p-global-nav-pc__items{
   height: inherit;
   display: flex;
   flex-wrap: wrap;
@@ -18,11 +18,11 @@
   justify-content: flex-end;
 }
 
-.p-pc-global-nav__items .p-pc-global-nav__btn{
+.p-global-nav-pc__items .p-global-nav-pc__btn{
   margin-left: rem(22);
 }
 
-.p-pc-global-nav__item{
+.p-global-nav-pc__item{
   height: inherit;
 
   @media screen and (max-width: 840px) {
@@ -31,7 +31,7 @@
 
 }
 
-.p-pc-global-nav__item a{
+.p-global-nav-pc__item a{
   display: inline-block;
   height: inherit;
   padding: 0 rem(18);
@@ -59,7 +59,7 @@
 
 }
 
-.p-pc-global-nav__item a::after{
+.p-global-nav-pc__item a::after{
   content: "";
   display: block;
   height: 5px;
@@ -76,11 +76,11 @@
   }
 }
 
-.p-pc-global-nav__item a:hover:after{
+.p-global-nav-pc__item a:hover:after{
   width: calc(100% - #{rem(34)});
 }
 
-.p-pc-global-nav__btn{
+.p-global-nav-pc__btn{
   margin-top: auto;
   margin-bottom: auto;
   margin-left: rem(27);

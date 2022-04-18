@@ -1,0 +1,124 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-sub-mv{
+  width: 100%;
+  height: math.div(350, 1925) * 100vw;
+  // height: (770 / 392) * 100vw;
+  
+  @include mq("md"){
+    height: math.div(460, 375) * 100vw;
+    // height: (851 / 1298) * 100vw;
+  }
+  @include mq("sm"){
+    height: math.div(760, 375) * 100vw;
+  }
+}
+
+.p-sub-mv__container{
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  background-image: url(../images/top/mv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+.p-sub-mv__text{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.p-sub-mv__title{
+  font-family: $third-font-family;
+  font-size: rem(50);
+  font-weight: $regular;
+  letter-spacing: 0em;
+  line-height: 1;
+  color: $white;
+
+
+  @include mq("xl"){
+    font-size: rem(36);
+  }
+  @include mq("inner"){
+    font-size: rem(30);
+  }
+  @include mq("md"){
+    font-size: rem(24);
+    line-height: 1.5;
+  }
+  @include mq("sm"){
+    font-size: rem(20);
+  }
+}
+
+.p-sub-mv__title div:last-child{
+  margin-top: rem(26);
+  
+  @include mq("xl"){
+    margin-top: rem(18);
+  }
+  @include mq("inner"){
+    margin-top: rem(15);
+  }
+  @include mq("md"){
+    margin-top: rem(12);
+  }
+  @include mq("sm"){
+    margin-top: rem(10);
+  }
+}
+
+.p-sub-mv__title span{
+  font-size: rem(76);
+  
+  @include mq("xl"){
+    font-size: rem(54);
+  }
+  @include mq("inner"){
+    font-size: rem(46);
+  }
+  @include mq("md"){
+    font-size: rem(36);
+  }
+  @include mq("sm"){
+    font-size: rem(28);
+  }
+}
+
+.p-sub-mv__subtitle{
+  display: inline-block;
+  font-family: $second-font-family;
+  font-size: rem(24);
+  font-weight: $medium;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: rem(81);
+
+  @include mq("xl"){
+    font-size: rem(18);
+    margin-top: rem(58);
+  }
+  @include mq("inner"){
+    font-size: rem(15);
+    margin-top: rem(49);
+  }
+  @include mq("md"){
+    font-size: rem(15);
+    margin-top: rem(49);
+  }
+  @include mq("sm"){
+    font-size: rem(10);
+    margin-top: rem(30);
+  }
+}

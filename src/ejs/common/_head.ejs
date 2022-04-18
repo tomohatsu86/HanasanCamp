@@ -1,24 +1,24 @@
-<%- include('../data/_data') %> 
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <meta name="robots" content="noindex" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title><%= title %></title>
-  <meta name="description" content="<%= description %>" />
-  <meta name="keywords" content="<%= keyword %>" />
+  <title><%= meta.title %></title>
+  <meta name="description" content="<%= meta.description %>" />
+  <meta name="keywords" content="<%= meta.keyword %>" />
   <!-- ogp -->
-  <meta property="og:title" content="<%= ogp_title %>" />
-  <meta property="og:type" content="<%= type %>" />
-  <meta property="og:url" content="<%= ogp_url %>" />
-  <meta property="og:image" content="<%= ogp_image %>" />
-  <meta property="og:site_name" content="<%= ogp_sitename %>" />
-  <meta property="og:description" content=<%= ogp_description %>" />
+  <meta property="og:title" content="<%= meta.ogp_title %>" />
+  <meta property="og:type" content="<%= meta.type %>" />
+  <meta property="og:url" content="<%= meta.ogp_url %>" />
+  <meta property="og:image" content="<%= meta.ogp_image %>" />
+  <meta property="og:site_name" content="<%= meta.ogp_sitename %>" />
+  <meta property="og:description" content=<%= meta.ogp_description %>" />
   <meta name="twitter:card" content="summary" />
   <!-- ファビコン -->
-  <link rel="icon" href="<%= favicon_href %>" />
+  <link rel="icon" href="<%= meta.favicon_href %>" />
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,3 +32,4 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
+<body>

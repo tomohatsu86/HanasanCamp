@@ -1,24 +1,32 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <%- include('./common/_head') %>
-  <body>
-    <!-- ヘッダー -->
-    <%- include('./common/_top-header') %>
+<% const meta = {
+  title : "Hanasan's Camp",
+  description : "トップページです",
+  keyword : "",
+  ogp_title : "",
+  type : "",
+  ogp_url : "",
+  ogp_image : "",
+  ogp_sitename : "",
+  ogp_description : "",
+  favicon_href : "",
+}; %>
+<% path = "."; %>
 
-    <!-- メインビュー -->
-    <%- include('./project/_p-top-mv') %>
+<%- include(path + '/common/_head', {meta: meta}) %>
 
-    <!-- コンセプトセクション -->
-    <%- include('./project/_p-top-concept') %>
-    
-    <!-- 法人セクション -->
-    <%- include('./project/_p-top-entrepreneurship') %>
-    
-    <!-- その他サポートセクション -->
-    <%- include('./project/_p-top-other') %>
-    
-    <!-- フッター -->
-    <%- include('./common/_footer') %>
+<!-- ヘッダー + トップメインビュー-->
+<%- include(path + '/common/_top-header') %>
 
-  </body>
-  </html>
+<!-- コンセプトセクション -->
+<%- include(path + '/project/_p-top-concept') %>
+
+<!-- 法人セクション -->
+<%- include(path + '/project/_p-top-hojin') %>
+
+<!-- その他サポートセクション -->
+<%- include(path + '/project/_p-top-other') %>
+
+<!-- フッター -->
+<%- include(path + '/common/_footer') %>
+
+

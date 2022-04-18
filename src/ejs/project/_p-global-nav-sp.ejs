@@ -1,0 +1,15 @@
+<% let path = '..'; %>
+
+<div class="p-global-nav-sp">
+  <ul class="p-global-nav-sp__items">
+    <li class="p-global-nav-sp__item"><a href="<%= path + '/index.html' %>">ホーム</a></li>
+    <li class="p-global-nav-sp__item"><a href="<%= path + '/about.html' %>">私たちについて</a></li>
+    <li class="p-global-nav-sp__item"><a href="#">法人のお客様</a></li>
+    <li class="p-global-nav-sp__item"><a href="#">個人のお客様</a></li>
+    <li class="p-global-nav-sp__item"><a href="#">法人設立をお考えの方</a></li>
+    <li class="p-global-nav-sp__item"><a href="#">アクセス</a></li>
+    <div class="p-global-nav-sp__btn">
+      <%- include('../component/_c-btn-contact',{text:'お問い合わせはこちら', link:'#', modifier:'c-btn-contact--sp'}) %>
+    </div>
+  </ul>
+</div>
