@@ -21,12 +21,14 @@
   </div>
 </header>
 
+<% let subImagePath = "./images/"; %>
 <!-- 下層ページメインビュー -->
 <div class="p-sub-mv">
   <div class="p-sub-mv__container">
-    <div class="p-sub-mv__text">
-      <span class="p-sub-mv__title"><%= subtitle.subTitle %></span>
-      <span class="p-sub-mv__subtitle"><%= subtitle.subTitleEn %></span>
-    </div>
+    <img src="<%= subImagePath + fileName +'/'+ imageName %>" alt="">
+  </div>
+  <div class="p-sub-mv__text">
+    <span class="p-sub-mv__title"><%= subtitle.subTitle %></span>
+    <span class="p-sub-mv__subtitle"><%= subtitle.subTitleEn %></span>
   </div>
 </div>
