@@ -21,15 +21,18 @@
   </div>
 </header>
 
+<% let topImagePath = "./images/"; %>
+
 <!-- トップメインビュー -->
 <div class="p-top-mv">
   <div class="p-top-mv__container">
-    <div class="p-top-mv__text">
-      <div class="p-top-mv__title">
-        <div>経営者の方に寄り添い、<br class="u-desktop">良きパートナーとして</div>
-        <div><span>夢</span>と<span>理念</span>の<span>実現</span>を全力で<br class="u-desktop">バックアップします。</div>
-      </div>
-      <span class="p-top-mv__subtitle">sample accounting office</span>
+    <img src="<%= topImagePath + fileName +'/'+ imageName %>" alt="">
+  </div>
+  <div class="p-top-mv__text">
+    <div class="p-top-mv__title">
+      <div>経営者の方に寄り添い、<br class="u-desktop">良きパートナーとして</div>
+      <div><span>夢</span>と<span>理念</span>の<span>実現</span>を全力で<br class="u-desktop">バックアップします。</div>
     </div>
+    <span class="p-top-mv__subtitle">sample accounting office</span>
   </div>
 </div>

@@ -3,6 +3,7 @@
 
 .p-sub-mv{
   width: 100%;
+  position: relative;
   height: math.div(350, 1925) * 100vw;
   // height: (770 / 392) * 100vw;
   
@@ -19,12 +20,6 @@
   width: 100%;
   height: inherit;
   overflow: hidden;
-  background-image: url(../images/about/about-mv.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  
 }
 
 .p-sub-mv__text{

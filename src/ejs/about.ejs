@@ -14,12 +14,13 @@
 
 <%- include(path + '/common/_head', {meta: meta}) %>
 
+<!-- ヘッダー + 下層ページメインビュー-->
+<% fileName = "about"; %>
+<% imageName = "about-mv.jpg"; %>
 <% const subtitle = {
   subTitle : '私たちについて',
   subTitleEn : "concept",
 } %>
-
-<!-- ヘッダー + 下層ページメインビュー-->
 <%- include(path + '/common/_sub-header', {subtitle: subtitle}) %>
 
 
