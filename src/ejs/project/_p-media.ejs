@@ -1,0 +1,13 @@
+<% let mediaImagePath = "./images/"; %>
+
+<div class="p-media">
+  <figure class="p-media__image">
+    <img src="<%= mediaImagePath + fileName +'/'+ text.image %>" alt="">
+  </figure>
+  <div class="p-media__body">
+    <h3 class="p-media__title"><%= text.title %></h3>
+    <p class="p-media__text">
+      <%= text.text %>
+    </p>
+  </div>
+</div>
