@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.p-about-ceo{
+
+}
+
+.p-about-ceo__contents{
+  display: flex;
+  align-items: center;
+  margin-top: rem(95);
+}
+
+.p-about-ceo__item{
+  width: 100%;
+  max-width: rem(690);
+  margin-right: rem(50);
+}
+
+.p-about-ceo__sub-name{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.p-about-ceo__name{
+  font-family: $base-font-family;
+  font-size: rem(26);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  color: #333;
+  margin-top: rem(17);
+}
+
+.p-about-ceo__name span{
+  font-family: $base-font-family;
+  font-size: rem(18);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.p-about-ceo__text{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.05em;
+  line-height: 1.875;
+  color: #333;
+  margin-top: rem(58);
+}
+
+.p-about-ceo__image{
+    width: 100%;
+    max-width: rem(500);
+}

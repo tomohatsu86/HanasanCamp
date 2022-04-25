@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-about-ceo{
+  margin-top: rem(100);
+  
+  @include mq("md"){
+    margin-top: rem(55);
+  }
+}
