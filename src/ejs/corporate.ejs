@@ -1,0 +1,75 @@
+<% const meta = {
+  title : "Hanasan's Camp | CORPORATION",
+  description : "法人のお客様へのページです",
+  keyword : "",
+  ogp_title : "Hanasan's Camp | CORPORATION",
+  type : "page",
+  ogp_url : "",
+  ogp_image : "",
+  ogp_sitename : "Hanasan's Camp | CORPORATION",
+  ogp_description : "",
+  favicon_href : "",
+}; %>
+<% path = "."; %>
+<% subImagePath = "./images/"; %>
+<% imageFileName = "corporate"; %>
+
+<%- include(path + '/common/_head', {meta: meta}) %>
+
+<!-- ヘッダー + 下層ページメインビュー-->
+<% mvImageName = "corporate-mv.jpg"; %>
+<% mvImageAlt = ""; %>
+<% const subtitle = {
+  subTitle : '法人のお客様',
+  subTitleEn : 'corporation',
+} %>
+<%- include(path + '/common/_sub-header', {subtitle: subtitle}) %>
+
+
+<!-- 法人ページトップ -->
+<% topImageName = "corporate-img.jpg"; %>
+<% topImageAlt = ""; %>
+<% const pageTopText = {
+  pageTopTitle : '税務、会計の面倒な手続きは●●会計事務所にお任せください！',
+  pageTopText01 : '豊富な経験・ノウハウを活かしあらゆる課題を解決いたします。',
+  pageTopText02 : '最適なご提案をさせていただきます。',
+  pageTopText03 : '●●会計事務所では、お客様の大切な会社により多くのお金を残すために税務顧問契約や申告業務はもちろん、経費削減、節税など経営支援・財務支援のご相談も承っております。お客様と二人三脚で一緒に法人の成長を全力で支えます。',
+} %>
+<div class="p-corporate-top l-corporate-top">
+  <%- include(path + '/project/_p-page-top', {pageTopText: pageTopText}) %>
+</div>
+
+
+<!-- 法人の料金セクション -->
+<% priceText1 = "顧問契約料は会社の規模や、年間の取引量、会計処理の複雑さなどを総合的に判断し、決定させていただきます。"; %>
+<% priceText2 = "ご検討の際はお気軽にお問い合わせくださいませ。"; %>
+<% const price1 = {
+  priceTitle : '顧問料',
+  price : '月額9,000円～',
+  priceNote : '※上記は最低料金となります。',
+} %>
+<% const price2 = {
+  priceTitle : '決算料',
+  price : '120,000円～',
+  priceNote : '※上記は最低料金となります。',
+} %>
+<% const price3 = {
+  priceTitle : '年末調整',
+  price : '20,000円(5名まで)',
+  priceNote : '※6名以上は上記料金+人数×1,000円となります。',
+} %>
+
+<div class="p-corporate-price l-corporate-price">
+  <%- include(path + '/project/_p-price',{
+    price1: price1,
+    price2: price2,
+    price3: price3
+  }) %>
+</div>
+
+
+
+<!-- フッター -->
+<%- include(path + '/common/_footer') %>
+
+

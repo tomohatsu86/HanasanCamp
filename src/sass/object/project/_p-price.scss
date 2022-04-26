@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.p-price__text{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.05em;
+  color: $text-color;
+  text-align: center;
+  margin-top: rem(50);
+}

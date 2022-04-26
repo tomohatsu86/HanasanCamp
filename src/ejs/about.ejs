@@ -11,12 +11,14 @@
   favicon_href : "",
 }; %>
 <% path = "."; %>
+<% subImagePath = "./images/"; %>
+<% fileName = "about"; %>
 
 <%- include(path + '/common/_head', {meta: meta}) %>
 
 <!-- ヘッダー + 下層ページメインビュー-->
-<% fileName = "about"; %>
-<% imageName = "about-mv.jpg"; %>
+<% mvImageName = "about-mv.jpg"; %>
+<% mvImageAlt = ""; %>
 <% const subtitle = {
   subTitle : '私たちについて',
   subTitleEn : "concept",

@@ -1,0 +1,37 @@
+<div class="p-price l-price">
+  <div class="p-price__inner l-inner">
+    <div class="p-price__header">
+    <%- include('../project/_p-section-head',{modifier:'', title:'料金について', en:'price'}) %>
+    </div>
+    <div class="p-price__text">
+      <p><%- priceText1 %><br><%- priceText2 %></p>
+    </div>
+    <div class="p-price__items">
+        <div class="p-price-card">
+          <div class="p-price-card__title"><%- price1.priceTitle %></div>
+          <div class="p-price-card__text">
+            <p class="p-price-card__price"><%- price1.price %></p>
+            <p class="p-price-card__note"><%- price1.priceNote %></p>
+          </div>
+        </div>
+        <div class="p-price-card">
+          <div class="p-price-card__title"><%- price2.priceTitle %></div>
+          <div class="p-price-card__text">
+            <p class="p-price-card__price"><%- price2.price %></p>
+            <p class="p-price-card__note"><%- price2.priceNote %></p>
+          </div>
+        </div>
+        <div class="p-price-card">
+          <div class="p-price-card__title"><%- price3.priceTitle %></div>
+          <div class="p-price-card__text">
+            <p class="p-price-card__price"><%- price3.price %></p>
+            <p class="p-price-card__note"><%- price3.priceNote %></p>
+          </div>
+        </div>
+    </div>
+
+
+
+
+  </div>
+</div>
