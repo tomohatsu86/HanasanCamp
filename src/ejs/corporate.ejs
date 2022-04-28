@@ -59,14 +59,23 @@
   priceNote : '※6名以上は上記料金+人数×1,000円となります。',
 } %>
 
+<% let price = {
+  priceTitle : '顧問料', price : '月額9,000円～', priceNote : '※上記は最低料金となります。',
+  } %>
+
 <div class="p-corporate-price l-corporate-price">
-  <%- include(path + '/project/_p-price',{
+  <%- include(path + '/project/_p-price', {
     price1: price1,
     price2: price2,
     price3: price3
   }) %>
 </div>
 
+
+
+<!-- 法人のサービスセクション -->
+<% serviceText1 = "●●会計事務所では以下のようなサービス、サポートをご提供しております。"; %>
+<% serviceText2 = "以下は一例となりますので、記載のない内容でもお気軽にご相談くださいませ。"; %>
 
 
 <!-- フッター -->
