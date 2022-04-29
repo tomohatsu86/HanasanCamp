@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.p-service-items{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-service-items__text{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  color: $text-color;
+  text-align: center;
+  margin-top: rem(32);
+}
