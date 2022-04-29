@@ -2,5 +2,33 @@
 
 .p-price-card{
   width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d0ddf1;
 }
 
+.p-price-card + .p-price-card{
+  margin-top: rem(30);
+}
+
+.p-price-card__title{
+  width: rem(200);
+  padding: rem(37) 0;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  color: $white;
+  text-align: center;
+  background-color: $blue;
+}
+
+.p-price-card__text{
+  padding-left: rem(37);
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.05em;
+  line-height: 1.875;
+  color: $text-color;
+}

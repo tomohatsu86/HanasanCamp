@@ -1,0 +1,33 @@
+@use "global" as *;
+
+
+.p-service-item{
+  display: flex;
+  align-items: center;
+  width: calc((100% - #{rem(30)} * 2) / 3);
+}
+
+.p-service-item + .p-service-item{
+  margin-left: rem(30);
+}
+
+.p-service-item:nth-child(3n+1){
+  margin-left: rem(0);
+}
+
+.p-service-item:nth-child(n+4){
+  margin-top: rem(30);
+}
+
+.p-service-item__icon{
+  width: rem(40);
+  margin-right: rem(18);
+}
+
+.p-service-item__text{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.05em;
+  color: $text-color;
+}

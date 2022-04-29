@@ -1,0 +1,11 @@
+<div class="p-service-contents">
+  <div class="p-service-items">
+    <% serviceItems.forEach(function (value) { %>
+      <div class="p-service-item">
+        <img class="p-service-item__icon" src="./images/common/check-mark.png" alt="">
+        <p class="p-service-item__text"><%- value %></p>
+      </div>
+    <% }); %>
+  </div>
+  <p class="p-service-items__text"><%- serviceFooterText %></p>
+</div>

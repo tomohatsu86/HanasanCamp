@@ -16,6 +16,7 @@
 
 <%- include(path + '/common/_head', {meta: meta}) %>
 
+
 <!-- ヘッダー + 下層ページメインビュー-->
 <% mvImageName = "corporate-mv.jpg"; %>
 <% mvImageAlt = ""; %>
@@ -35,9 +36,11 @@
   pageTopText02 : '最適なご提案をさせていただきます。',
   pageTopText03 : '●●会計事務所では、お客様の大切な会社により多くのお金を残すために税務顧問契約や申告業務はもちろん、経費削減、節税など経営支援・財務支援のご相談も承っております。お客様と二人三脚で一緒に法人の成長を全力で支えます。',
 } %>
-<div class="p-corporate-top l-corporate-top">
-  <%- include(path + '/project/_p-page-top', {pageTopText: pageTopText}) %>
+<section class="p-corporate-top l-corporate-top">
+  <div class="p-corporate-top__inner l-inner">
+    <%- include(path + '/project/_p-page-top', {pageTopText: pageTopText}) %>
 </div>
+  </section>
 
 
 <!-- 法人の料金セクション -->
@@ -63,19 +66,40 @@
   priceTitle : '顧問料', price : '月額9,000円～', priceNote : '※上記は最低料金となります。',
   } %>
 
-<div class="p-corporate-price l-corporate-price">
-  <%- include(path + '/project/_p-price', {
-    price1: price1,
-    price2: price2,
-    price3: price3
-  }) %>
-</div>
-
+<section class="p-corporate-price l-corporate-price">
+  <div class="p-corporate-price__inner l-inner">
+    <%- include(path + '/project/_p-price', {
+      price1: price1,
+      price2: price2,
+      price3: price3
+    }) %>
+  </div>
+</section>
 
 
 <!-- 法人のサービスセクション -->
-<% serviceText1 = "●●会計事務所では以下のようなサービス、サポートをご提供しております。"; %>
-<% serviceText2 = "以下は一例となりますので、記載のない内容でもお気軽にご相談くださいませ。"; %>
+<% serviceTopText1 = "●●会計事務所では以下のようなサービス、サポートをご提供しております。"; %>
+<% serviceTopText2 = "以下は一例となりますので、記載のない内容でもお気軽にご相談くださいませ。"; %>
+<% const serviceItems = [
+  '節税の相談、ご提案',
+  '融資についてのサポート',
+  '数字の報告と分析',
+  '決算前の利益予測',
+  '金融機関を意識した決算書の作成',
+  '提携している専門家のご紹介',
+  '役員報酬シュミレーション',
+  '経理の合理化のご提案',
+]; %>
+<% serviceFooterText = "その他、お客様のお悩みをヒヤリングさせていただき、最適なご提案をさせていただきます。"; %>
+
+<section class="p-corporate-service l-corporate-service">
+  <div class="p-corporate-service__inner l-inner">
+    <%- include(path + '/project/_p-service', {serviceItems: serviceItems}) %>
+  </div>
+</section>
+
+
+
 
 
 <!-- フッター -->
