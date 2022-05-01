@@ -37,11 +37,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       if($('.js-drawer-open').hasClass('is-open')){
         $('.js-drawer-menu').fadeOut(300);
         $(this).removeClass('is-open');
-        $("html").removeClass("is-fixed");
+        $( body ).removeClass("is-fixed");
       }else{
         $('.js-drawer-menu').fadeIn(300);
         $(this).addClass('is-open');
-        $("html").addClass("is-fixed");
+        $( body ).addClass("is-fixed");
       }
     });
   });
