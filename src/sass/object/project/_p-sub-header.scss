@@ -30,7 +30,7 @@
 
 .p-sub-header__drawer{
 	display: none;
-	z-index: 9999;
+	z-index: 999999;
 
 	@include mq("md"){
 		display: block;
@@ -43,6 +43,9 @@
   position: absolute;
   top: 0;
   left: 0;
+	overflow: scroll;
+	background-color: $blue2;
+	z-index: 888888;
 }
 
 .p-sub-header__sp-nav.is-open{

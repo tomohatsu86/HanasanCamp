@@ -5,6 +5,14 @@
 .space{
   padding-top: rem(2500);
 }
+
+
+
+body.is-fixed{
+  overflow: hidden;
+}
+
+
 html {
   // //~375px
   // @media (max-width: 375px) {

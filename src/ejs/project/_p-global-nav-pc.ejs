@@ -1,13 +1,18 @@
 <% let path = '..'; %>
+<% navMenu = [
+  {name:'ホーム', link:'index.html' },
+  {name:'私たちについて', link:'about.html' },
+  {name:'法人のお客様', link:'corporate.html' },
+  {name:'個人のお客様', link:'personal.html' },
+  {name:'法人設立をお考えの方', link:'hojin.html' },
+  {name:'アクセス', link:'#' },
+]; %>
 
 <div class="p-global-nav-pc">
   <ul class="p-global-nav-pc__items">
-    <li class="p-global-nav-pc__item"><a href="<%= path + '/index.html' %>">ホーム</a></li>
-    <li class="p-global-nav-pc__item"><a href="<%= path + '/about.html' %>">私たちについて</a></li>
-    <li class="p-global-nav-pc__item"><a href="<%= path + '/corporate.html' %>">法人のお客様</a></li>
-    <li class="p-global-nav-pc__item"><a href="<%= path + '/personal.html' %>">個人のお客様</a></li>
-    <li class="p-global-nav-pc__item"><a href="<%= path + '/hojin.html' %>">法人設立をお考えの方</a></li>
-    <li class="p-global-nav-pc__item"><a href="<%= path + '/' %>">アクセス</a></li>
+    <% navMenu.forEach( function( value ) { %>
+      <li class="p-global-nav-pc__item"><a href="<%= path + '/' + value.link %>"><%- value.name %></a></li>
+    <% }); %>
   </ul>
   <div class="p-global-nav-pc__btn">
     <%- include(path + '/component/_c-btn-contact',{text:'お問い合わせはこちら', link:'#', modifier:''}) %>
