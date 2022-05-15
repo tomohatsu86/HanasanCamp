@@ -5,10 +5,19 @@
   display: flex;
   align-items: center;
   width: calc((100% - #{rem(30)} * 2) / 3);
+  
+  @include mq("md"){
+    width: 100%;
+  }
 }
 
 .p-service-item + .p-service-item{
   margin-left: rem(30);
+  
+  @include mq("md"){
+    margin-left: 0;
+    margin-top: rem(20);
+  }
 }
 
 .p-service-item:nth-child(3n+1){

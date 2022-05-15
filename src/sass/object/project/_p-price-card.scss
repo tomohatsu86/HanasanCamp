@@ -12,7 +12,8 @@
 }
 
 .p-price-card__title{
-  width: rem(200);
+  width: 100%;
+  max-width: rem(200);
   padding: rem(37) 0;
   font-family: $base-font-family;
   font-size: rem(16);
@@ -25,10 +26,17 @@
 
 .p-price-card__text{
   padding-left: rem(37);
+  padding-right: rem(5);
   font-family: $base-font-family;
   font-size: rem(16);
   font-weight: $regular;
   letter-spacing: 0.05em;
   line-height: 1.875;
   color: $text-color;
+  
+  @include mq("md"){
+    width: rem(250);
+    font-size: rem(12);
+    padding-left: rem(24);
+  }
 }
