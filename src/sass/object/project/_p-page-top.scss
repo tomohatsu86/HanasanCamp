@@ -8,6 +8,19 @@
   letter-spacing: 0.05em;
   color: $blue;
   text-align: center;
+
+  @include mq("xl"){
+    font-size: rem(26);
+  }
+  @include mq("inner"){
+    font-size: rem(26);
+  }
+  @include mq("md"){
+    font-size: rem(20);
+  }
+  @include mq("sm"){
+    font-size: rem(20);
+  }
 }
 
 .p-page-top__body{

@@ -4,15 +4,13 @@
 .p-sub-mv{
   width: 100%;
   position: relative;
-  height: math.div(350, 1925) * 100vw;
-  // height: (770 / 392) * 100vw;
+  height: math.div(350, 1920) * 100vw;
   
   @include mq("md"){
-    height: math.div(210, 375) * 100vw;
-    // height: (851 / 1298) * 100vw;
+    height: math.div(250, 767) * 100vw;
   }
   @include mq("sm"){
-    height: math.div(210, 375) * 100vw;
+    height: math.div(180, 375) * 100vw;
   }
 }
 
@@ -20,6 +18,11 @@
   width: 100%;
   height: inherit;
   overflow: hidden;
+}
+
+.p-sub-mv__container img{
+  height: 100%;
+  object-fit: cover;
 }
 
 .p-sub-mv__text{
@@ -77,10 +80,10 @@
   }
   @include mq("md"){
     font-size: rem(15);
-    margin-top: rem(24);
+    margin-top: rem(16);
   }
   @include mq("sm"){
     font-size: rem(10);
-    margin-top: rem(24);
+    margin-top: rem(10);
   }
 }

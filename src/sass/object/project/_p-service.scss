@@ -9,6 +9,10 @@
   color: $text-color;
   text-align: center;
   margin-top: rem(50);
+  
+  @include mq("md"){
+    text-align: left;
+  }
 }
 
 .p-service__box{

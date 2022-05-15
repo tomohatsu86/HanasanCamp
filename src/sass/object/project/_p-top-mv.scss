@@ -5,14 +5,12 @@
   position: relative;
   width: 100%;
   height: math.div(770, 1920) * 100vw;
-  // height: (770 / 392) * 100vw;
   
   @include mq("md"){
-    height: math.div(460, 375) * 100vw;
-    // height: (851 / 1298) * 100vw;
+    height: math.div(400, 375) * 100vw;
   }
   @include mq("sm"){
-    height: math.div(760, 375) * 100vw;
+    height: math.div(520, 375) * 100vw;
   }
 }
 
@@ -20,6 +18,11 @@
   width: 100%;
   height: inherit;
   overflow: hidden;  
+}
+
+.p-top-mv__container img{
+  height: 100%;
+  object-fit: cover;
 }
 
 .p-top-mv__text{
@@ -47,7 +50,7 @@
     font-size: rem(30);
   }
   @include mq("md"){
-    font-size: rem(24);
+    font-size: rem(20);
     line-height: 1.5;
   }
   @include mq("sm"){
@@ -68,7 +71,7 @@
     margin-top: rem(12);
   }
   @include mq("sm"){
-    margin-top: rem(10);
+    margin-top: rem(12);
   }
 }
 
@@ -82,7 +85,7 @@
     font-size: rem(46);
   }
   @include mq("md"){
-    font-size: rem(36);
+    font-size: rem(32);
   }
   @include mq("sm"){
     font-size: rem(28);
@@ -110,10 +113,10 @@
   }
   @include mq("md"){
     font-size: rem(15);
-    margin-top: rem(49);
+    margin-top: rem(24);
   }
   @include mq("sm"){
-    font-size: rem(10);
-    margin-top: rem(30);
+    font-size: rem(15);
+    margin-top: rem(20);
   }
 }
