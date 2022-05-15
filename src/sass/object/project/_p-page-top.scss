@@ -53,6 +53,12 @@
   }
 }
 
+.p-page-top__text a{
+  font-weight: $bold;
+  text-decoration: underline;
+  color: $blue;
+}
+
 .p-page-top__image{
   width: 100%;
   max-width: rem(400);
