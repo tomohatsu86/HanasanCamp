@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-page-hojin-price-title{
+  font-family: $base-font-family;
+  font-size: rem(18);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  color: $text-color;
+  margin-bottom: rem(20);
+}
+.p-page-hojin-price-title:nth-child(n+1){
+  margin-top: rem(50);
+}

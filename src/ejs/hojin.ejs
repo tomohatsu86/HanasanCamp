@@ -1,0 +1,108 @@
+<% const meta = {
+  title : "Hanasan's Camp | HOJIN",
+  description : "法人設立をお考えの方のページです",
+  keyword : "",
+  ogp_title : "Hanasan's Camp | HOJIN",
+  type : "page",
+  ogp_url : "",
+  ogp_image : "",
+  ogp_sitename : "Hanasan's Camp | HOJIN",
+  ogp_description : "",
+  favicon_href : "",
+}; %>
+<% path = "."; %>
+<% subImagePath = "./images/"; %>
+<% imageFileName = "hojin"; %>
+
+<%- include(path + '/common/_head', {meta: meta}) %>
+
+<!-- ヘッダー + 下層ページメインビュー-->
+<% mvImageName = "hojin-mv.jpg"; %>
+<% mvImageAlt = ""; %>
+<% const subtitle = {
+  subTitle : '法人設立をお考えの方',
+  subTitleEn : 'entrepreneurship',
+} %>
+<%- include(path + '/common/_sub-header', {subtitle: subtitle}) %>
+
+
+<!-- 法人設立ページトップ -->
+<% topImageName = "hojin-img.jpg"; %>
+<% topImageAlt = ""; %>
+<% const pageTopText = {
+  pageTopTitle : '法人設立の際の面倒な手続きや申請など一手に引き受けます！',
+  pageTopText01 : 'これから夢を持って、会社の設立やお店の開業を目指しているかたにとって、多くの場合ではじめのハードルとなるのが、設立に必要な申請や手続きです。',
+  pageTopText02 : '●●会計事務所ではそんな面倒な手続きや申請を一手に引き受け、法人設立のサポートをさせていただきます。',
+  pageTopText03 : '設立後の毎年必要な手続きなどもすべてお任せください。',
+} %>
+<section class="p-hojin-top l-hojin-top">
+  <div class="p-hojin-top__inner l-inner">
+    <%- include(path + '/project/_p-page-hojin-top', {pageTopText: pageTopText}) %>
+  </div>
+</section>
+
+
+<!-- 法人設立の料金セクション -->
+<% priceText1 = "新たに法人を設立する場合は税金や経理のことがわからず、本業の妨げになることが多くあります。"; %>
+<% priceText2 = "そんな方のために、●●会計事務所ではそれらの申請や作業を引き受け、また、経営に関するご相談などもお聞きし、新規開業をサポートいたします。"; %>
+
+<% priceTitle = "一時費用"; %>
+<% priceItems = [
+  {title:'定款認証費用', price:'50,000円～', text:'※上記は法定費用となります。'},
+  {title:'謄本交付料', price:'2,000円～', text:'※上記は法定費用となります。'},
+  {title:'登録免許税', price:'30,000円～', text:'※上記は法定費用となります。'},
+  {title:'手数料', price:'3,000円～', text:''},
+]; %>
+
+<% priceTitle2 = "税務会計顧問費用"; %>
+<% priceItems2 = [
+  {title:'顧問料', price:'月額 15,000円(税抜)', text:''},
+  {title:'決算料', price:'120,000円(税抜)', text:''},
+]; %>
+
+<section class="p-hojin-price l-hojin-price">
+  <div class="p-hojin-price__inner l-inner">
+    <%- include(path + '/project/_p-page-hojin-price') %>
+  </div>
+</section>
+
+
+<!-- 法人設立のサービスセクション -->
+<% serviceTopText1 = "●●会計事務所では以下のようなサービス、サポートをご提供しております。"; %>
+<% serviceTopText2 = "以下は一例となりますので、記載のない内容でもお気軽にご相談くださいませ。"; %>
+<% const serviceItems = [
+  '商号調査の相談・サポート',
+  '定款の作成',
+  '税務署への申請代行',
+  '定款の目的の相談・サポート',
+  '公証人役での電子定款の認証',
+  '確定申告書の作成',
+  '資本金の額の相談・サポート',
+  '登記申請書類の作成',
+  '帳簿の定期チェック',
+]; %>
+<% serviceFooterText = "その他、お話を伺いながら相談、アドバイス、ご提案をさせていただきます。"; %>
+
+<section class="p-hojin-service l-hojin-service">
+  <div class="p-hojin-service__inner l-inner">
+    <%- include(path + '/project/_p-service', {serviceItems: serviceItems}) %>
+  </div>
+</section>
+
+
+<!-- 法人設立のお客様の声セクション -->
+<% voiceAddress = "大阪市●●"; %>
+<% voiceName = "ダミーテンポ様"; %>
+
+<section class="p-hojin-voice l-hojin-voice">
+  <div class="p-hojin-voice__inner l-inner">
+    <%- include(path + '/project/_p-voice', {serviceItems: serviceItems}) %>
+  </div>
+</section>
+
+
+
+<!-- フッター -->
+<%- include(path + '/common/_footer') %>
+
+

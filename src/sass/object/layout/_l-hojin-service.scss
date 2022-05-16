@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-hojin-service{
+  margin-top: rem(147);
+  
+  @include mq("md"){
+    margin-top: rem(60);
+  }
+}

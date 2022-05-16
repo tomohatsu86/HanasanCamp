@@ -1,0 +1,20 @@
+<p class="p-page-hojin-price-title"><%- priceTitle %></p>
+<% priceItems.forEach( function( value ) { %>
+  <div class="p-page-hojin-price-card p-price-card">
+    <div class="p-price-card__title"><%- value.title %></div>
+    <div class="p-price-card__text">
+      <p class="p-price-card__price"><%- value.price %></p>
+      <p class="p-price-card__note"><%- value.text %></p>
+    </div>
+  </div>
+<% }); %>
+<p class="p-page-hojin-price-title"><%- priceTitle2 %></p>
+<% priceItems2.forEach( function( value ) { %>
+  <div class="p-page-hojin-price-card p-price-card">
+    <div class="p-price-card__title"><%- value.title %></div>
+    <div class="p-price-card__text">
+      <p class="p-price-card__price"><%- value.price %></p>
+      <p class="p-price-card__note"><%- value.text %></p>
+    </div>
+  </div>
+<% }); %>
